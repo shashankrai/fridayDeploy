@@ -1,0 +1,30 @@
+.Header {
+	width: 100%;
+}
+
+.Header h1 {
+	color: #f00;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.OnlyDesktop {
+	display: none;
+}
+
+.OnlyMobile {
+	color: #f00;
+	font-size: 15px;
+	padding: 20px;
+	width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+	.OnlyMobile {
+		display: none;
+	}
+	.OnlyDesktop {
+		display: block;
+		padding: 20px;
+	}
+}

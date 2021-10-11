@@ -1,0 +1,68 @@
+.MainWrapper {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 1;
+  height: 100%;
+  overflow: scroll;
+}
+
+.FilterWrapper{
+  width:100%;
+  order:0;
+  color:#551A8B;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.CarWrapper{
+  width: 100%;
+  order:1;
+  border-radius: 4px;
+}
+
+.FilterList{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  border-top:1px solid #551A8B;;
+}
+
+.Filter {
+  min-height:50px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) {
+  .MainWrapper{
+    padding: 0 15px;
+    height: calc(100% - 15px);
+    margin-top: 15px;
+    overflow: hidden;
+  }
+
+  .FilterWrapper{
+    width: 30%;
+    border: 2px solid #551A8B;
+  }
+
+  .CarWrapper{
+    width: 69%;
+    order:1;
+    border: 2px solid #551A8B;
+    border-radius: 4px;
+  }
+  
+  .Filter{
+    margin-bottom: 30px;
+  }
+
+  
+ }

@@ -1,0 +1,37 @@
+.SearchWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 50px;
+	text-align: center;
+	width: 70%;
+	margin:10px;
+}
+
+.SearchBox {
+	box-sizing: border-box;
+	transition: width 0.4s ease-in-out;
+	border: 1px solid #551A8B;
+	border-radius: 4px;
+	background-color: white;
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	padding: 8px;
+	width: auto;
+	min-width: 200px;
+	color: #551A8B;
+	font-size: 16px;
+	-webkit-transition: width 0.4s ease-in-out;
+	border: 1px solid #551A8B;
+}
+
+.SearchBox:focus, .SearchBox:hover, .SearchBox:active {
+	width: 80%;
+	border: 1px solid #551A8B;
+}
+
+@media only screen and (min-width: 768px) {
+	.SearchWrapper {
+		width: 80%;
+	}
+}
